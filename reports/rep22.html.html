@@ -4,7 +4,7 @@
 	<head>
 
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Bismark Processing Report - {{filename}}</title>
+		<title>Bismark Processing Report - data/SRR3824222_1.fastq.gz and data/SRR3824222_2.fastq.gz</title>
 
 		<style>
                   body {
@@ -149,8 +149,8 @@
 			<h1>Bismark Processing Report</h1>
 	
 			<div class="subtitle">
-				<h3>{{filename}}</h3>
-				<p>Data processed at 01:40:17 on 2022-02-18</p>
+				<h3>data/SRR3824222_1.fastq.gz and data/SRR3824222_2.fastq.gz</h3>
+				<p>Data processed at 04:34:00 on 2022-02-18</p>
 			</div>
 			
 		</div>
@@ -167,26 +167,26 @@
 						<table class="data">
 							<tbody>
 								<tr>
-									<th>{{sequences_analysed_in_total}}</th>
-									<td>{{total_sequences_alignments}}</td>
+									<th>Sequence pairs analysed in total</th>
+									<td>163183367</td>
 								</tr>
 							</tbody>
 							<tbody>
 								<tr>
-									<th>{{unique_seqs_text}}</th>
-									<td>{{unique_seqs}}</td>
+									<th>Paired-end alignments with a unique best hit</th>
+									<td>7039016</td>
 								</tr>
 								<tr>
-									<th>{{no_alignments_text}}</th>
-									<td>{{no_alignments}}</td>
+									<th>Pairs without alignments under any condition</th>
+									<td>151812191</td>
 								</tr>
 								<tr>
-									<th>{{multiple_alignments_text}}</th>
-									<td>{{multiple_alignments}}</td>
+									<th>Pairs that did not map uniquely</th>
+									<td>4332160</td>
 								</tr>
 								<tr>
 									<th>Genomic sequence context not extractable (edges of chromosomes)</th>
-									<td>{{no_genomic}}</td>
+									<td>0</td>
 								</tr>
 							</tbody>
 						</table>
@@ -210,53 +210,62 @@
 						<tbody>
 							<tr>
 								<th>Total C's analysed</th>
-								<td>{{total_C_count}}</td>
+								<td>413476804</td>
 							</tr>
 						</tbody>
 						<tbody>
 							<tr>
 								<th>Methylated C's in CpG context</th>
-								<td>{{meth_CpG}}</td>
+								<td>14571021</td>
 							</tr>
 							<tr>
 								<th>Methylated C's in CHG context</th>
-								<td>{{meth_CHG}}</td>
+								<td>1914747</td>
 							</tr>
 							<tr>
 								<th>Methylated C's in CHH context</th>
-								<td>{{meth_CHH}}</td>
+								<td>4416672</td>
 							</tr>
-							{{meth_unknown}}
+							     <tr>
+                                <th>Methylated C's in Unknown context</th>
+    				<td>32753</td>
+    			</tr>
 						</tbody>
 						<tbody>
 							<tr>
 								<th>Unmethylated C's in CpG context</th>
-								<td>{{unmeth_CpG}}</td>
+								<td>4348676</td>
 							</tr>
 							<tr>
 								<th>Unmethylated C's in CHG context</th>
-								<td>{{unmeth_CHG}}</td>
+								<td>89915046</td>
 							</tr>
 							<tr>
 								<th>Unmethylated C's in CHH context</th>
-								<td>{{unmeth_CHH}}</td>
+								<td>298310642</td>
 							</tr>
-							{{unmeth_unknown}}
+							     <tr>
+                                <th>Unmethylated C's in Unknown context</th>
+    				<td>206323</td>
+    			</tr>
 						</tbody>
 						<tbody>
 							<tr>
 								<th>Percentage methylation (CpG context)</th>
-								<td>{{perc_CpG}}%</td>
+								<td>77.0%</td>
 							</tr>
 							<tr>
 								<th>Percentage methylation (CHG context)</th>
-								<td>{{perc_CHG}}%</td>
+								<td>2.1%</td>
 							</tr>
 							<tr>
 								<th>Percentage methylation (CHH context)</th>
-								<td>{{perc_CHH}}%</td>
+								<td>1.5%</td>
 							</tr>
-							{{perc_unknown}}
+							     <tr>
+                                <th>Methylated C's in Unknown context</th>
+    				<td>N/A%</td>
+    			</tr>
 						</tbody>
 					</table>				
 				</td>
@@ -278,22 +287,22 @@
 						<tbody>
 							<tr>
 								<th>OT</th>
-								<td>{{number_OT}}</td>
+								<td>3521884</td>
 								<td>original top strand</td>
 							</tr>
 							<tr>
 								<th>CTOT</th>
-								<td>{{number_CTOT}}</td>
+								<td>0</td>
 								<td>complementary to original top strand</td>
 							</tr>
 							<tr>
 								<th>CTOB</th>
-								<td>{{number_CTOB}}</td>
+								<td>0</td>
 								<td>complementary to original bottom strand</td>
 							</tr>
 							<tr>
 								<th>OB</th>
-								<td>{{number_OB}}</td>
+								<td>3517132</td>
 								<td>original bottom strand</td>
 							</tr>
 						</tbody>
@@ -309,6 +318,43 @@
 	<hr>
 	
 	<!-- This section is optional -->
+	
+	<h2>Deduplication</h2>
+	<table>
+		<tbody>
+			<tr>
+				<td style="vertical-align:top">
+					
+					<table class="data">
+						<tbody>
+						<tr>
+							<th>Alignments analysed</th>
+							<td>7039016</td>
+						</tr>
+						<tr>
+							<th>Unique alignments</th>
+							<td>6833758</td>
+						</tr>
+						<tr>
+							<th>Duplicates removed</th>
+							<td>205258</td>
+						</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td colspan="2" style="text-align:left;">Duplicated alignments were found at <strong>164796</strong> different positions</td>
+							</tr>
+						</tbody>
+					</table>			
+				</td>
+				<td>
+				 	<div id="Duplication_Plot"> <!--Plotly chart will be drawn inside this DIV --> </div>	
+				</td>
+			</tr>
+		</tbody>
+	</table>
+		
+	<hr>
 	
 	
 	<!-- This section is optional -->
@@ -361,7 +407,7 @@
 		<!-- JAVASCRIPT CODE GOES HERE -->
 		
 		var data = [{
-			values: [{{alignment_stats_plotly}}],
+			values: [7039016,151812191,4332160,0],
 			labels: ['Unique Alignments', 'No Alignment', 'Multiple Alignments', 'No Genomic Sequence'],
 			type: 'pie',
 			name: 'Alignment Statistics',
@@ -417,7 +463,7 @@
 	<script>
 		
 		var data = [{
-			values: [{{duplication_stats_plotly}}],
+			values: [6833758,205258],
 			labels: ['Unique Alignments', 'Duplicate Alignments' ],
 			textinfo: ['Unique Alignments', 'Duplicate Alignments' ],
 			name: 'Degree of Duplication',
@@ -475,7 +521,7 @@
 		var data = [
 		  {
 			x: ['CpG context', 'CHG context', 'CHH context'],
-			y: [{{cytosine_methylation_plotly}}],
+			y: [77.0,2.1,1.5],
 			type: 'bar',
 			marker: {
 				color: ['#0d233a', '#2f7ed8','#2f7ed8'],
@@ -567,7 +613,7 @@
 		  {
 			x: ['OT', 'CTOT', 'CTOB', 'OB'],
 			<!-- y: [49, 1, 2, 48], hardcoded for testing purposes -->
-			y: [{{strand_alignment_plotly}}],
+			y: [3521884,0,0,3517132],
 			type: 'bar',
 			marker: {
 				color: ['#0d233a', '#2f7ed8','#2f7ed8','#0d233a'],
@@ -1003,7 +1049,7 @@
 
 		</a>
 
-		<p>Analysis produced by <a href="https://github.com/FelixKrueger/Bismark"><strong>Bismark</strong></a> (version {{bismark_version}}) - a tool to map bisulfite converted sequence reads and determine cytosine methylation states</p>
+		<p>Analysis produced by <a href="https://github.com/FelixKrueger/Bismark"><strong>Bismark</strong></a> (version v0.23.1dev) - a tool to map bisulfite converted sequence reads and determine cytosine methylation states</p>
 		<p>Report graphs rendered using <a href="https://plot.ly/">plot.ly</a>, design last changed 07 Aug 2018</p>
 	</footer>
 

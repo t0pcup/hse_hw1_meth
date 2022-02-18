@@ -4,7 +4,7 @@
 	<head>
 
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Bismark Processing Report - {{filename}}</title>
+		<title>Bismark Processing Report - data/SRR5836473_1.fastq.gz and data/SRR5836473_2.fastq.gz</title>
 
 		<style>
                   body {
@@ -149,8 +149,8 @@
 			<h1>Bismark Processing Report</h1>
 	
 			<div class="subtitle">
-				<h3>{{filename}}</h3>
-				<p>Data processed at 01:38:32 on 2022-02-18</p>
+				<h3>data/SRR5836473_1.fastq.gz and data/SRR5836473_2.fastq.gz</h3>
+				<p>Data processed at 04:47:11 on 2022-02-18</p>
 			</div>
 			
 		</div>
@@ -167,26 +167,26 @@
 						<table class="data">
 							<tbody>
 								<tr>
-									<th>{{sequences_analysed_in_total}}</th>
-									<td>{{total_sequences_alignments}}</td>
+									<th>Sequence pairs analysed in total</th>
+									<td>105515878</td>
 								</tr>
 							</tbody>
 							<tbody>
 								<tr>
-									<th>{{unique_seqs_text}}</th>
-									<td>{{unique_seqs}}</td>
+									<th>Paired-end alignments with a unique best hit</th>
+									<td>2850231</td>
 								</tr>
 								<tr>
-									<th>{{no_alignments_text}}</th>
-									<td>{{no_alignments}}</td>
+									<th>Pairs without alignments under any condition</th>
+									<td>99534068</td>
 								</tr>
 								<tr>
-									<th>{{multiple_alignments_text}}</th>
-									<td>{{multiple_alignments}}</td>
+									<th>Pairs that did not map uniquely</th>
+									<td>3131579</td>
 								</tr>
 								<tr>
 									<th>Genomic sequence context not extractable (edges of chromosomes)</th>
-									<td>{{no_genomic}}</td>
+									<td>0</td>
 								</tr>
 							</tbody>
 						</table>
@@ -210,53 +210,62 @@
 						<tbody>
 							<tr>
 								<th>Total C's analysed</th>
-								<td>{{total_C_count}}</td>
+								<td>168618929</td>
 							</tr>
 						</tbody>
 						<tbody>
 							<tr>
 								<th>Methylated C's in CpG context</th>
-								<td>{{meth_CpG}}</td>
+								<td>3830643</td>
 							</tr>
 							<tr>
 								<th>Methylated C's in CHG context</th>
-								<td>{{meth_CHG}}</td>
+								<td>415458</td>
 							</tr>
 							<tr>
 								<th>Methylated C's in CHH context</th>
-								<td>{{meth_CHH}}</td>
+								<td>1439521</td>
 							</tr>
-							{{meth_unknown}}
+							     <tr>
+                                <th>Methylated C's in Unknown context</th>
+    				<td>10661</td>
+    			</tr>
 						</tbody>
 						<tbody>
 							<tr>
 								<th>Unmethylated C's in CpG context</th>
-								<td>{{unmeth_CpG}}</td>
+								<td>4411225</td>
 							</tr>
 							<tr>
 								<th>Unmethylated C's in CHG context</th>
-								<td>{{unmeth_CHG}}</td>
+								<td>36786346</td>
 							</tr>
 							<tr>
 								<th>Unmethylated C's in CHH context</th>
-								<td>{{unmeth_CHH}}</td>
+								<td>121735736</td>
 							</tr>
-							{{unmeth_unknown}}
+							     <tr>
+                                <th>Unmethylated C's in Unknown context</th>
+    				<td>96307</td>
+    			</tr>
 						</tbody>
 						<tbody>
 							<tr>
 								<th>Percentage methylation (CpG context)</th>
-								<td>{{perc_CpG}}%</td>
+								<td>46.5%</td>
 							</tr>
 							<tr>
 								<th>Percentage methylation (CHG context)</th>
-								<td>{{perc_CHG}}%</td>
+								<td>1.1%</td>
 							</tr>
 							<tr>
 								<th>Percentage methylation (CHH context)</th>
-								<td>{{perc_CHH}}%</td>
+								<td>1.2%</td>
 							</tr>
-							{{perc_unknown}}
+							     <tr>
+                                <th>Methylated C's in Unknown context</th>
+    				<td>N/A%</td>
+    			</tr>
 						</tbody>
 					</table>				
 				</td>
@@ -278,22 +287,22 @@
 						<tbody>
 							<tr>
 								<th>OT</th>
-								<td>{{number_OT}}</td>
+								<td>1425154</td>
 								<td>original top strand</td>
 							</tr>
 							<tr>
 								<th>CTOT</th>
-								<td>{{number_CTOT}}</td>
+								<td>0</td>
 								<td>complementary to original top strand</td>
 							</tr>
 							<tr>
 								<th>CTOB</th>
-								<td>{{number_CTOB}}</td>
+								<td>0</td>
 								<td>complementary to original bottom strand</td>
 							</tr>
 							<tr>
 								<th>OB</th>
-								<td>{{number_OB}}</td>
+								<td>1425077</td>
 								<td>original bottom strand</td>
 							</tr>
 						</tbody>
@@ -350,75 +359,6 @@
 	
 	<!-- This section is optional -->
 	
-	<h2>Cytosine Methylation after Extraction</h2>
-
-	<table>
-		<tbody>
-			<tr>
-				<td>
-					<table class="data">
-						<tbody>
-							<tr>
-								<th>Total C's analysed</th>
-								<td>177157754</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<th>Methylated C's in CpG context</th>
-								<td>1914374</td>
-							</tr>
-							<tr>
-								<th>Methylated C's in CHG context</th>
-								<td>297421</td>
-							</tr>
-							<tr>
-								<th>Methylated C's in CHH context</th>
-								<td>1066806</td>
-							</tr>
-							
-						</tbody>
-						<tbody>
-							<tr>
-								<th>Unmethylated C's in CpG context</th>
-								<td>6262904</td>
-							</tr>
-							<tr>
-								<th>Unmethylated C's in CHG context</th>
-								<td>39194423</td>
-							</tr>
-							<tr>
-								<th>Unmethylated C's in CHH context</th>
-								<td>128421826</td>
-							</tr>
-								
-						</tbody>
-						<tbody>
-							<tr>
-								<th>Percentage methylation (CpG context)</th>
-								<td>23.4%</td>
-							</tr>
-							<tr>
-								<th>Percentage methylation (CHG context)</th>
-								<td>0.8%</td>
-							</tr>
-							<tr>
-								<th>Percentage methylation (CHH context)</th>
-								<td>0.8%</td>
-							</tr>
-							
-						</tbody>
-					</table>				
-				</td>
-				<td>
-					<div id="Cytosine_Methylation_postDuplication" class="bargraph"> <!--Plotly chart will be drawn inside this DIV --> </div>	
-				</td>
-			</tr>
-		</tbody>
-	</table>	
-
-	<hr>
-	
 		
 	<!-- This section is optional -->
 	
@@ -467,7 +407,7 @@
 		<!-- JAVASCRIPT CODE GOES HERE -->
 		
 		var data = [{
-			values: [{{alignment_stats_plotly}}],
+			values: [2850231,99534068,3131579,0],
 			labels: ['Unique Alignments', 'No Alignment', 'Multiple Alignments', 'No Genomic Sequence'],
 			type: 'pie',
 			name: 'Alignment Statistics',
@@ -581,7 +521,7 @@
 		var data = [
 		  {
 			x: ['CpG context', 'CHG context', 'CHH context'],
-			y: [{{cytosine_methylation_plotly}}],
+			y: [46.5,1.1,1.2],
 			type: 'bar',
 			marker: {
 				color: ['#0d233a', '#2f7ed8','#2f7ed8'],
@@ -625,7 +565,7 @@
 		var data = [
 		  	{
 				x: ['CpG context', 'CHH context', 'CHG context'],
-				y: [23.4,0.8,0.8],
+				y: [{{cytosine_methylation_post_duplication_plotly}}],
 				type: 'bar',
 				marker: {
 					color: ['#0d233a', '#2f7ed8','#2f7ed8'],
@@ -673,7 +613,7 @@
 		  {
 			x: ['OT', 'CTOT', 'CTOB', 'OB'],
 			<!-- y: [49, 1, 2, 48], hardcoded for testing purposes -->
-			y: [{{strand_alignment_plotly}}],
+			y: [1425154,0,0,1425077],
 			type: 'bar',
 			marker: {
 				color: ['#0d233a', '#2f7ed8','#2f7ed8','#0d233a'],
@@ -1109,7 +1049,7 @@
 
 		</a>
 
-		<p>Analysis produced by <a href="https://github.com/FelixKrueger/Bismark"><strong>Bismark</strong></a> (version {{bismark_version}}) - a tool to map bisulfite converted sequence reads and determine cytosine methylation states</p>
+		<p>Analysis produced by <a href="https://github.com/FelixKrueger/Bismark"><strong>Bismark</strong></a> (version v0.23.1dev) - a tool to map bisulfite converted sequence reads and determine cytosine methylation states</p>
 		<p>Report graphs rendered using <a href="https://plot.ly/">plot.ly</a>, design last changed 07 Aug 2018</p>
 	</footer>
 
