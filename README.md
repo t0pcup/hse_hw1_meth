@@ -58,17 +58,9 @@ for i in ['SRR3824222', 'SRR5836473', 'SRR5836475']:
   draw(i)
 ```
 
-### Epiblast
-
-![hist_22](pictures/22.png)
-
-### 8cell
-
-![hist_73](pictures/73.png)
-
-### ICM
-
-![hist_75](pictures/75.png)
+| **Epiblast**                | **8cell**                   | **ICM**                     |
+|:---------------------------:|:---------------------------:|:---------------------------:|
+| ![hist_22](pictures/22.png) | ![hist_73](pictures/73.png) | ![hist_75](pictures/75.png) |
 
 ## Уровень метелирования и покрытия
 
