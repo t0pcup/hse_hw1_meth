@@ -1,0 +1,66 @@
+[test bigwig]
+file = /content/s_SRR5836473.cover.bigWig.bw
+height = 7
+title = Cover SRR5836473
+number_of_bins = 2000
+min_value = 0
+max_value = 350
+color = blue
+
+
+[spacer]
+
+[test bigwig]
+file = /content/SRR5836473_methylation.bigWig.bw
+height = 7
+title = Methylation SRR5836473
+number_of_bins = 2000
+min_value = 0
+max_value = 130
+color = blue
+
+[spacer]
+
+[test bigwig]
+file = /content/s_SRR5836475.cover.bigWig.bw
+height = 7
+title = Cover SRR5836475
+number_of_bins = 2000
+min_value = 0
+max_value = 350
+color =pink
+
+
+[spacer]
+
+[test bigwig]
+file = /content/SRR5836475_methylation.bigWig.bw
+height = 7
+title = Methylation SRR5836475
+number_of_bins = 2000
+min_value = 0
+max_value = 130
+color = pink
+
+[spacer]
+
+[test bigwig]
+file = /content/s_SRR3824222.cover.bigWig.bw
+height = 7
+title = Cover SRR3824222
+number_of_bins = 2000
+min_value = 0
+max_value = 500
+color =purple
+
+
+[spacer]
+
+[test bigwig]
+file = /content/SRR3824222_methylation.bigWig.bw
+height = 7
+title = Methylation SRR3824222
+number_of_bins = 2000
+min_value = 0
+max_value = 150
+color = purple
